@@ -12,3 +12,5 @@ document.write("The concatenated string is: " + result);
 
 // Display an alert with the concatenated string using the window.alert() method
 window.alert("The concatenated string is: " + result);
+
+
