@@ -56,7 +56,7 @@ function random_number() {
     document.getElementById('random').innerHTML =   Math.random() * 100;
 }
 
-function math_abs() {
+function math_abs() { // Math.abs(x): Returns the absolute value of a number x.
     var num = -5;
     var absNum = Math.abs(num);
     console.log(absNum); // Output: 5
@@ -64,12 +64,13 @@ function math_abs() {
 }
 
 function  math_sqrt(){
+
     var num = 25;
     var sqrtNum = Math.sqrt(num);
     console.log(sqrtNum); // Output: 5
 }
 
-function math_random(){
+function math_random(){  // Math.sqrt(x): Returns the square root of a number x. 
     var randNum = Math.random();
     console.log(randNum); // Output: a random number between 0 and 1
 }
@@ -86,7 +87,7 @@ function math_cell() { // Math.ceil(x): Rounds a number x up to the nearest inte
     console.log(ceilNum); // Output: 6
 }
 
-function  math_round(){
+function  math_round(){  // Math.round(x): Rounds a number x to the nearest integer. 
     var num = 5.4;
     var roundNum = Math.round(num);
     console.log(roundNum); // Output: 5
