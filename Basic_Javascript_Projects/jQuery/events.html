@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include the jQuery library -->
+
+    <style>
+        .myButton {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .myButton:hover {
+            background-color: darkblue;
+        }
+
+        div  {
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="myButton">Click me</button>
+    <input type="text" value="">
+    <div> I was hidden by default.</div>
+    <p>I'm  hidden.</p>
+    <script>
+        $(document).ready(function () {
+            $(".myButton").on("click", function () {
+                console.log("click")
+                $(this).css("background-color", "red"); // Change the background color of the clicked button to red
+            });
+        });
+
+        $("input").on("change", { foo: "bar" }, function (eventObject) {
+            console.log("An input value has changed! ", eventObject.data.foo);
+        }
+        );
+
+        // Instantaneously hide all paragraphs
+        $("p").hide(1000);
+
+        // Instantaneously show all divs that have the hidden style class
+        $("div.hidden").show();
+    </script>
+</body>
+
+</html>
