@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON.parse() Example</title>
+  </head>
+  <body>
+    <h1>JSON.parse() Example</h1>
+    <p id="output"></p>
+
+    <script>
+      const jsonString = '{"name":"John","age":30,"city":"New York"}';
+      const obj = JSON.parse(jsonString);
+      document.getElementById("output").innerHTML = `Name: ${obj.name}, Age: ${obj.age}, City: ${obj.city}`;
+    </script>
+  </body>
+</html>

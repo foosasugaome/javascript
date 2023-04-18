@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>localStorage Example</title>
+  </head>
+  <body>
+    <h1>localStorage Example</h1>
+    <input type="text" id="input" placeholder="Enter some text">
+    <button onclick="saveToLocalStorage()">Save to localStorage</button>
+    <button onclick="getFromLocalStorage()">Get from localStorage</button>
+    <p id="output"></p>
+
+    <script>
+      function saveToLocalStorage() {
+        const input = document.getElementById("input").value;
+        localStorage.setItem("text", input);
+      }
+
+      function getFromLocalStorage() {
+        const output = document.getElementById("output");
+        const text = localStorage.getItem("text");
+        if (text) {
+          output.innerHTML = text;
+        } else {
+          output.innerHTML = "No text found in localStorage";
+        }
+      }
+    </script>
+  </body>
+</html>
